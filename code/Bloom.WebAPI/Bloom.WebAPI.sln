@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35728.132 d17.12
+VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloom.WebAPI", "Bloom.WebAPI\Bloom.WebAPI.csproj", "{163F1699-D6C7-4E33-94B5-AEEEF077F8AC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloom.WebAPI48", "Bloom.WebAPI48\Bloom.WebAPI48.csproj", "{BA1D6584-E7F3-41D1-B215-699C024F9E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloom.WebAPI.Nancy", "Bloom.WebAPI.Nancy\Bloom.WebAPI.Nancy.csproj", "{312960C3-3BA5-4D81-B385-BC35F9C1ED15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BA1D6584-E7F3-41D1-B215-699C024F9E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA1D6584-E7F3-41D1-B215-699C024F9E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA1D6584-E7F3-41D1-B215-699C024F9E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312960C3-3BA5-4D81-B385-BC35F9C1ED15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312960C3-3BA5-4D81-B385-BC35F9C1ED15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312960C3-3BA5-4D81-B385-BC35F9C1ED15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312960C3-3BA5-4D81-B385-BC35F9C1ED15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

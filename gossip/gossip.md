@@ -12,10 +12,10 @@
 
 Nancy方案、OWIN方案、Swagger在线接口文档
 
-* Nancy已经停更，推荐用AspNet
-* .net8安装 `Swashbuckle.AspNetCore`
+* Nancy安装`Nancy.Hosting.Self` //已经停更，推荐用AspNet
 * framework安装 `Swashbuckle.Core`、`Microsoft.AspNet.WebApi.OwinSelfHost` // 版本停留在5.*
 * 注意不同版本的Swagger UI 路径可能不同
+* .net8安装 `Swashbuckle.AspNetCore`
 
 项目 *Bloom.WebAPI*
 

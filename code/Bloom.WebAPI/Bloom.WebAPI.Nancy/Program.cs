@@ -1,4 +1,4 @@
-﻿using Microsoft.Owin.Hosting;
+﻿using Nancy.Hosting.Self;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,27 +6,26 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bloom.WebAPI48
+namespace Bloom.WebAPI.Nancy
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string baseAddress = "http://localhost:8088/";
-            string swaggerUrl = $"{baseAddress}swagger/ui/index"; // 注意不同版本的Swagger UI 路径可能不同
+            string baseAddress = "http://localhost:8087/";
+            // string swaggerUrl = $"{baseAddress}api/swagger"; // using Nancy.Swagger;
 
-            // Start OWIN host 
-            using (WebApp.Start<Startup>(url: baseAddress))
+            using (var host = new NancyHost(new Uri(baseAddress)))
             {
-                // Create HttpClient and make a request to api/values 
+                host.Start();
+
                 HttpClient client = new HttpClient();
-
                 var response = client.GetAsync(baseAddress + "api/WeatherForecast").Result;
-
                 Console.WriteLine(response);
                 Console.WriteLine(response.Content.ReadAsStringAsync().Result);
                 Console.ReadLine();
             }
+
         }
     }
 }
